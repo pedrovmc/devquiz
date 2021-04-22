@@ -17,7 +17,7 @@ class _ProgressIndicatorWidgetState extends State<ProgressIndicatorWidget> {
   @override
   Widget build(BuildContext context) {
     return LinearProgressIndicator(
-      value: 0.3,
+      value: widget.value,
       backgroundColor: AppColors.chartSecondary,
       valueColor: AlwaysStoppedAnimation<Color>(
         AppColors.chartPrimary,
